@@ -8,85 +8,109 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <canvas></canvas>
+    <section class="color-wrap">
+      <input type="color" name="" id="color" />
 
-    <input
-      type="range"
-      id="line-width"
-      ,
-      min="1"
-      ,
-      max="10"
-      value="5"
-      step="0.5"
-    />
-    <input type="color" name="" id="color" />
-    <div>
-      <div
-        class="color-option"
-        style="background-color: #1abc9c"
-        data-color="#1abc9c"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #3498db"
-        data-color="#3498db"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #34495e"
-        data-color="#34495e"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #27ae60"
-        data-color="#27ae60"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #8e44ad"
-        data-color="#8e44ad"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #f1c40f"
-        data-color="#f1c40f"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #e74c3c"
-        data-color="#e74c3c"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #95a5a6"
-        data-color="#95a5a6"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #d35400"
-        data-color="#d35400"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #bdc3c7"
-        data-color="#bdc3c7"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #2ecc71"
-        data-color="#2ecc71"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #e67e22"
-        data-color="#e67e22"
-      ></div>
-    </div>
+      <article>
+        <div
+          class="color-option"
+          style="background-color: #1abc9c"
+          data-color="#1abc9c"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #3498db"
+          data-color="#3498db"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #34495e"
+          data-color="#34495e"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #27ae60"
+          data-color="#27ae60"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #8e44ad"
+          data-color="#8e44ad"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #f1c40f"
+          data-color="#f1c40f"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #e74c3c"
+          data-color="#e74c3c"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #95a5a6"
+          data-color="#95a5a6"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #d35400"
+          data-color="#d35400"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #2ecc71"
+          data-color="#2ecc71"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #e67e22"
+          data-color="#e67e22"
+        ></div>
+      </article>
+    </section>
 
-    <button id="mode-btn">Fill</button>
-    <button id="destroy-btn">Destroy</button>
-    <button id="eraser-btn">Eraser</button>
+    <section class="main-wrap">
+      <h1>Meme Maker</h1>
+      <canvas></canvas>
+    </section>
+
+    <section class="button-wrap">
+      <div class="text-input">
+        <label for="line-width">Line thickness.</label>
+        <input
+          type="range"
+          id="line-width"
+          ,
+          min="1"
+          ,
+          max="10"
+          value="5"
+          step="0.5"
+        />
+      </div>
+
+      <div class="button-inner">
+        <h2>Choose Button</h2>
+        <button id="mode-btn" class="btns">Fill</button>
+        <button id="destroy-btn" class="btns">Destroy</button>
+        <button id="eraser-btn" class="btns">Eraser</button>
+        <label for="file" class="btns">
+          Add photo
+          <input type="file" accept="image/*" id="file" />
+        </label>
+        <button id="save" class="btns">Save image</button>
+      </div>
+
+      <div class="text-input">
+        <h2>Write and then double click</h2>
+        <input
+          type="text"
+          id="text"
+          placeholder="Write and then double click"
+        />
+      </div>
+    </section>
 
     <script src="app.js"></script>
   </body>

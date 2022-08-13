@@ -2,6 +2,11 @@
 
 Painting Board made with VanillaJS
 
+## Link
+
+- <a href="https://leesaewa.github.io/paintjs/">Update Meme Maker</a>
+- <a href="https://leesaewa.github.io/paintjs/only_paint/">Painting Board</a>
+
 # 22.08.13 update
 
 - 2022년 업데이트됨.

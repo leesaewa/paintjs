@@ -1,22 +1,119 @@
 @import "only_paint/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;300;400;500;600;700;800&display=swap");
 
 body {
   background: #f6f9fc;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Hahmlet", serif;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: "Hahmlet", serif;
+  width: 100%;
+}
+
+/* 
+  color
+ */
+
+.color-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
+}
+
+.color-option {
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.color-option:hover {
+  transform: scale(1.4);
+}
+
+/* 
+  canvas
+ */
+
+h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 canvas {
   width: 800px;
   height: 800px;
-  border: 1px solid red;
+  border-radius: 30px;
+  background-color: #fff;
 }
 
-.color-option {
-  width: 50px;
-  height: 50px;
+/* 
+  button
+ */
+
+h2 {
+  text-align: center;
+}
+
+.button-inner {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0 10px;
+  margin: 14px 0;
+}
+
+.btns {
+  all: unset;
+  width: 100%;
+  display: block;
   cursor: pointer;
+  margin: 10px 0;
+  padding: 10px 0 12px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #8e44ad;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.btns:hover {
+  opacity: 0.8;
+}
+
+input[type="file"] {
+  display: none;
+}
+label[for="line-width"] {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text-input {
+  margin: 10px 0;
+}
+input[type="text"] {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 1em;
+  background-color: rgb(216, 216, 216);
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+input[type="text"]:focus {
+  background-color: #8e44ad;
+  color: #fff;
 }
